@@ -55,6 +55,9 @@ public class LevelGeneratorManager : MonoBehaviour {
 	
     
 
+	/// <summary>
+	/// Initialize gamedata where it all begins.
+	/// </summary>
     void iniTialiezeGamedata ()
     {
         for(int i = 0;i < 4;i++)
@@ -63,6 +66,11 @@ public class LevelGeneratorManager : MonoBehaviour {
         }
     }
 
+	/// <summary>
+	/// Gets the prefabs from resources by respect of type.
+	/// </summary>
+	/// <returns>The prefabs fromresources.</returns>
+	/// <param name="type">Type.</param>
     GameObject GetPrefabsFromresources (thePrefabsWeWant type)
     {
         GameObject thePrefabWeWant = null;
@@ -82,6 +90,10 @@ public class LevelGeneratorManager : MonoBehaviour {
 
     }
 
+	/// <summary>
+	/// Creates the random level parameter as the path for player.
+	/// </summary>
+	/// <param name="valueCheck">Value check.</param>
 	public void createRandomLevelParam (int valueCheck)
     {
         Vector3 postSet = new Vector3();
@@ -158,6 +170,9 @@ public class LevelGeneratorManager : MonoBehaviour {
     }
 
 
+	/// <summary>
+	/// Play and replay button action for UI screen.
+	/// </summary>
     public void PlayAndreplayButtonAction ()
     {
         isGameInitialize = true;

@@ -35,7 +35,7 @@ public class PlayerControler : MonoBehaviour {
             moveDirection.Normalize();
             posData = playerTransform.localPosition;
             target = moveDirection * moveSpeed + posData;
-            target.y = posData.y;
+           // target.y = posData.y;
             playerTransform.localPosition = Vector3.Lerp(posData, target, Time.deltaTime);
         }
        
